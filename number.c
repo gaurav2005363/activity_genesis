@@ -20,13 +20,20 @@ for(i=2;i<=num/2;++i){
    break;}
 }
   if(num==1){
-    printf("1 IS NEITHER PRIME NOR COMPOSITE\N");
+    printf("1 IS NEITHER PRIME NOR COMPOSITE\n");
   }
   else{
     if(f==0)
       printf("%d is a prime number\n",num);
     else
       printf("%d is not a prime number\n",num);
+  }
+  // Factors of the number
+  printf("Factors of %d are: ",num);
+  for(i=1;i<=num;++i){
+    if(num%i==0){
+      printf("%d",i);
+    }
   }
   return 0;
 }
