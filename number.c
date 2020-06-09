@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-int num,i,f=0;
+int num,i,f=0,j;
 printf("Enter an integer: ");
 scanf("%d",&num);
 //Number even or odd
@@ -14,7 +14,7 @@ else
 printf("%d is odd\n",num);
 }
   //Number prime or not
-for(i=2;i<=num/2;++i){
+for(int i=2;i<=num/2;++i){
   if(num%i==0)
   {f=1;
    break;}
@@ -30,7 +30,7 @@ for(i=2;i<=num/2;++i){
   }
   // Factors of the number
   printf("Factors of %d are: ",num);
-  for(i=1;i<=num;++i){
+  for(int i=1;i<=num;++i){
     if(num%i==0){
       printf("%d",i);
     }
