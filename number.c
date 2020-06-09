@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-int num;
+int num,i,f=0;
 printf("Enter an integer: ");
 scanf("%d",&num);
 //Number even or odd
@@ -13,5 +13,20 @@ else
 {
 printf("%d is odd\n",num);
 }
-return 0;
+  //Number prime or not
+for(i=2;i<=num/2;++i){
+  if(num%i==0)
+  {f=1;
+   break;}
+}
+  if(num==1){
+    printf("1 IS NEITHER PRIME NOR COMPOSITE\N");
+  }
+  else{
+    if(f==0)
+      printf("%d is a prime number\n",num);
+    else
+      printf("%d is not a prime number\n",num);
+  }
+  return 0;
 }
